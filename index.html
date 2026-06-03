@@ -1087,8 +1087,9 @@
 </div>
 
 <script>
-  /* ===== CONTACT ROUTING — edit these two lines only ===== */
-  const CONTACT_EMAIL='basel29896@gmail.com';
+  /* ===== CONTACT ROUTING ===== */
+  const CONTACT_EMAIL_DISPLAY='hello@7uloultech.com';   // shown to users everywhere
+  const CONTACT_EMAIL='basel29896@gmail.com';           // real inbox — where mail is delivered
   const WHATSAPP_NUMBER='962795032137'; // intl format, digits only, no + or spaces
   const MAIL_HREF='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('New inquiry - 7uloultech.com')+'&body='+encodeURIComponent('Hi Basel,\n\nI would like to discuss: ');
   const WA_HREF='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hi 7uloul tech, I would like to discuss a project.');
@@ -1315,7 +1316,7 @@
     if(!form)return;
     const statusEl=document.getElementById('formStatus');
     const emailLabel=document.getElementById('cf-emaillabel');
-    if(emailLabel)emailLabel.textContent=CONTACT_EMAIL;
+    if(emailLabel)emailLabel.textContent=CONTACT_EMAIL_DISPLAY;
     const keyInput=form.querySelector('[name="access_key"]');
 
     function setStatus(msg,kind){
@@ -1331,7 +1332,7 @@
         const d=new FormData(form);
         const body='Service: '+(d.get('service')||'')+'\n\n'+(d.get('message')||'')+'\n\n— '+(d.get('name')||'')+' ('+(d.get('email')||'')+')';
         window.location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('New project inquiry - 7uloultech.com')+'&body='+encodeURIComponent(body);
-        setStatus('Opening your email app… if nothing happens, email us at '+CONTACT_EMAIL+'.','ok');
+        setStatus('Opening your email app… if nothing happens, email us at '+CONTACT_EMAIL_DISPLAY+'.','ok');
         return;
       }
 
@@ -1345,10 +1346,10 @@
           setStatus("Thanks — your inquiry is in. We'll reply shortly.",'ok');
           form.reset();
         }else{
-          setStatus('Something went wrong. Please email us at '+CONTACT_EMAIL+'.','err');
+          setStatus('Something went wrong. Please email us at '+CONTACT_EMAIL_DISPLAY+'.','err');
         }
       }catch(err){
-        setStatus('Network error. Please email us at '+CONTACT_EMAIL+'.','err');
+        setStatus('Network error. Please email us at '+CONTACT_EMAIL_DISPLAY+'.','err');
       }finally{
         btn.disabled=false;btn.innerHTML=original;
       }
