@@ -12,7 +12,7 @@ front-end: web/app development, branding, UX, and POS systems.
 - `assets/appicon.svg` — square app icon / favicon source
 
 ## Features
-- Luxury mauve / plum / sage palette on near-black
+- Dark-luxury navy / royal-blue / gold palette (#1A1A2E · #16213e · #0f3460 · #efc07b)
 - Dimensional depth-on-scroll, intro ring loader, 3D rotating 7T cube
 - Sliding text-swap nav, odometer counters, infinite marquee
 - Rule-based chat widget with email + WhatsApp quick actions
