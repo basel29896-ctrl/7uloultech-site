@@ -1144,9 +1144,12 @@
   const lerp=(a,b,t)=>a+(b-a)*t;
   function applyDepth(){
     const vh=innerHeight;
+    const docH=document.documentElement.scrollHeight;
+    const atBottom=(scrollY+vh)>=docH-4;   // page can't scroll further — settle remaining sections
     for(const el of depths){
       const top=el.getBoundingClientRect().top;
-      const p=clamp((vh-top)/(vh*0.55),0,1);   // 0 = far in depth, 1 = settled at camera
+      let p=clamp((vh-top)/(vh*0.55),0,1);   // 0 = far in depth, 1 = settled at camera
+      if(atBottom) p=1;
       const tz=lerp(-280,0,p), rx=lerp(9,0,p), op=lerp(.10,1,p), bl=lerp(5,0,p);
       el.style.transform=`perspective(1500px) translateZ(${tz.toFixed(1)}px) rotateX(${rx.toFixed(2)}deg)`;
       el.style.opacity=op.toFixed(3);
