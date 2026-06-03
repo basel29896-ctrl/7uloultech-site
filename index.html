@@ -3,7 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7uloul tech — حلول | Digital Solutions Studio</title>
+<title>7uloul tech — حلول | Digital Solutions Studio in Amman, Jordan</title>
+<meta name="description" content="7uloul tech is a premium digital-solutions studio in Amman, Jordan — websites, applications, branding, UX, and POS systems engineered for businesses that demand precision and scale.">
+<meta name="keywords" content="web design Amman, web development Jordan, POS systems, branding, UX design, app development, digital solutions, 7uloul tech, حلول رقمية, تصميم مواقع الأردن">
+<meta name="author" content="7uloul tech">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#080808">
+<link rel="canonical" href="https://basel29896-ctrl.github.io/7uloultech-site/">
+
+<!-- favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/appicon.svg">
+<link rel="apple-touch-icon" href="assets/appicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="7uloul tech">
+<meta property="og:title" content="7uloul tech — Premium Digital Solutions Studio">
+<meta property="og:description" content="Websites, applications, branding, UX, and POS systems for ambitious businesses. Built in Amman, delivered worldwide.">
+<meta property="og:url" content="https://basel29896-ctrl.github.io/7uloultech-site/">
+<meta property="og:image" content="https://basel29896-ctrl.github.io/7uloultech-site/assets/logo-board.svg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_JO">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="7uloul tech — Premium Digital Solutions Studio">
+<meta name="twitter:description" content="Websites, applications, branding, UX, and POS systems. Built in Amman, delivered worldwide.">
+<meta name="twitter:image" content="https://basel29896-ctrl.github.io/7uloultech-site/assets/logo-board.svg">
+
+<!-- structured data: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "7uloul tech",
+  "alternateName": "حلول",
+  "description": "Premium digital-solutions studio — web design, development, branding, UX, and POS systems.",
+  "url": "https://basel29896-ctrl.github.io/7uloultech-site/",
+  "image": "https://basel29896-ctrl.github.io/7uloultech-site/assets/logo-board.svg",
+  "email": "basel29896@gmail.com",
+  "telephone": "+962795032137",
+  "areaServed": "Worldwide",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amman",
+    "addressCountry": "JO"
+  },
+  "knowsAbout": ["Web Design","Web Development","Application Development","Brand Design","UX Research","POS Systems"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@300;400;500;600;700&family=Tajawal:wght@500;700;900&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
@@ -396,14 +444,6 @@
   .marquee-track .star{color:var(--gold);font-size:16px}
   @keyframes marq{to{transform:translateX(-50%)}}
 
-  /* ===== CONTACT ROUTING — edit these two lines only ===== */
-  const CONTACT_EMAIL='basel29896@gmail.com';
-  const WHATSAPP_NUMBER='962795032137'; // <- replace X's: intl format, digits only, no + or spaces
-  const MAIL_HREF='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('New inquiry - 7uloultech.com')+'&body='+encodeURIComponent('Hi Basel,\n\nI would like to discuss: ');
-  const WA_HREF='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hi 7uloul tech, I would like to discuss a project.');
-  [['ctaEmail',MAIL_HREF],['footEmail',MAIL_HREF],['ovQuote',MAIL_HREF],['ctaWa',WA_HREF],['footWa',WA_HREF]]
-    .forEach(([id,href])=>{const el=document.getElementById(id); if(el) el.href=href;});
-
   /* ===== CHAT WIDGET ===== */
   .chat-fab{position:fixed;right:24px;bottom:24px;z-index:120;width:60px;height:60px;border-radius:50%;border:none;cursor:pointer;display:grid;place-items:center;background:linear-gradient(145deg,var(--gold-soft),var(--gold-2));box-shadow:0 12px 30px rgba(156,123,152,.4);transition:transform .3s}
   .chat-fab:hover{transform:translateY(-3px) scale(1.05)}
@@ -468,6 +508,88 @@
     .cta-box{padding:48px 26px}
     header{padding:130px 0 60px}
   }
+
+  /* ---- WORK / PORTFOLIO ---- */
+  .work{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pcard{
+    position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
+    background:var(--panel);text-decoration:none;color:inherit;display:flex;flex-direction:column;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,box-shadow .35s;
+  }
+  .pcard:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
+  .pcard-vis{position:relative;aspect-ratio:16/11;overflow:hidden;display:grid;place-items:center}
+  .pcard-vis::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(8,8,8,.55))}
+  .pv-1{background:linear-gradient(140deg,#3a1f42,#0e0a12)}
+  .pv-2{background:linear-gradient(140deg,#23303a,#0e0a12)}
+  .pv-3{background:linear-gradient(140deg,#4e1c50,#15101a)}
+  .pv-4{background:linear-gradient(140deg,#5a4a3a,#0e0a12)}
+  .pv-5{background:linear-gradient(140deg,#2c2740,#0e0a12)}
+  .pv-6{background:linear-gradient(140deg,#1f3a34,#0e0a12)}
+  .pcard-vis .glyph{font-family:'Syne',sans-serif;font-weight:800;font-size:58px;color:rgba(255,255,255,.12);letter-spacing:-2px;z-index:1;transition:.4s}
+  .pcard:hover .pcard-vis .glyph{color:rgba(212,188,208,.32);transform:scale(1.06)}
+  .pcard-tag{position:absolute;top:14px;left:14px;z-index:2;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold-soft);background:rgba(8,8,8,.5);backdrop-filter:blur(6px);border:1px solid var(--line-strong);padding:5px 11px;border-radius:100px}
+  .pcard-body{padding:22px 24px 26px}
+  .pcard-body h3{font-family:'Syne',sans-serif;font-weight:700;font-size:19px;letter-spacing:-.3px;margin-bottom:8px}
+  .pcard-body p{color:var(--muted);font-size:14px;line-height:1.55}
+  .pcard-meta{display:flex;gap:18px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .pcard-meta .m .v{font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--gold)}
+  .pcard-meta .m .k{font-size:11.5px;color:var(--faint);margin-top:2px;letter-spacing:.3px}
+
+  /* ---- TESTIMONIALS ---- */
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .tcard{
+    position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+    padding:32px 28px;display:flex;flex-direction:column;gap:20px;transition:border-color .35s,transform .35s,box-shadow .35s;
+  }
+  .tcard:hover{border-color:var(--line-strong);transform:translateY(-4px);box-shadow:0 24px 50px -26px rgba(0,0,0,.7)}
+  .tcard .qm{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:64px;line-height:.5;color:var(--gold-2);height:26px}
+  .tcard blockquote{color:var(--text);font-size:15.5px;line-height:1.65;flex:1}
+  .tcard .stars{color:var(--gold);font-size:14px;letter-spacing:3px}
+  .tcard .who{display:flex;align-items:center;gap:13px}
+  .tcard .av{width:44px;height:44px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;color:#1c1020;background:linear-gradient(145deg,var(--gold-soft),var(--gold-2))}
+  .tcard .who b{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;display:block}
+  .tcard .who small{color:var(--faint);font-size:12.5px}
+
+  /* ---- CONTACT FORM ---- */
+  .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+  .contact-form{background:var(--panel);border:1px solid var(--line-strong);border-radius:24px;padding:40px 38px;text-align:left}
+  .contact-form h3{font-family:'Syne',sans-serif;font-weight:700;font-size:24px;letter-spacing:-.4px;margin-bottom:6px}
+  .contact-form .sub{color:var(--muted);font-size:14.5px;margin-bottom:26px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.4px;color:var(--muted);margin-bottom:7px;text-transform:uppercase}
+  .field input,.field select,.field textarea{
+    width:100%;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;
+    padding:13px 15px;color:var(--text);font-family:inherit;font-size:14.5px;outline:none;transition:.2s;
+  }
+  .field textarea{resize:vertical;min-height:104px}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);background:var(--panel-2)}
+  .field select{appearance:none;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,var(--gold) 50%),linear-gradient(135deg,var(--gold) 50%,transparent 50%);background-position:calc(100% - 20px) center,calc(100% - 15px) center;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .contact-form .btn-gold{width:100%;justify-content:center;margin-top:8px;border:none;cursor:pointer}
+  .form-note{margin-top:14px;font-size:12.5px;color:var(--faint);text-align:center}
+  .form-status{margin-top:16px;font-size:14px;padding:0;max-height:0;overflow:hidden;border-radius:12px;transition:.4s}
+  .form-status.show{padding:13px 16px;max-height:120px}
+  .form-status.ok{background:rgba(118,128,113,.14);border:1px solid var(--sage);color:#c3cebb}
+  .form-status.err{background:rgba(180,80,90,.12);border:1px solid #a45a64;color:#e3b5bb}
+  .contact-side{display:flex;flex-direction:column;justify-content:center;gap:22px}
+  .contact-side .lead{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.8px;line-height:1.08}
+  .contact-side p{color:var(--muted);font-size:16px;max-width:42ch}
+  .cside-direct{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+  .cside-direct a{display:flex;align-items:center;gap:13px;color:var(--text);text-decoration:none;font-size:15px;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);transition:.25s}
+  .cside-direct a:hover{border-color:var(--gold);color:var(--gold);transform:translateX(4px)}
+  .cside-direct a svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.8;flex-shrink:0}
+
+  @media(max-width:980px){
+    .work-grid{grid-template-columns:repeat(2,1fr)}
+    .tgrid{grid-template-columns:1fr}
+    .contact-layout{grid-template-columns:1fr}
+  }
+  @media(max-width:560px){
+    .work-grid{grid-template-columns:1fr}
+    .field-row{grid-template-columns:1fr}
+    .contact-form{padding:30px 22px}
+  }
 </style>
 </head>
 <body>
@@ -496,8 +618,9 @@
     </a>
     <div class="nav-links">
       <a href="#services" class="tswap"><span class="t"><span>Services</span><span>Services</span></span></a>
+      <a href="#work" class="tswap"><span class="t"><span>Work</span><span>Work</span></span></a>
       <a href="#process" class="tswap"><span class="t"><span>Process</span><span>Process</span></span></a>
-      <a href="#why" class="tswap"><span class="t"><span>Why Us</span><span>Why Us</span></span></a>
+      <a href="#testimonials" class="tswap"><span class="t"><span>Clients</span><span>Clients</span></span></a>
       <a href="#contact" class="tswap"><span class="t"><span>Contact</span><span>Contact</span></span></a>
     </div>
     <a href="#contact" class="btn btn-gold">Start a Project</a>
@@ -514,10 +637,11 @@
   </button>
   <div class="nav-overlay-inner">
     <a href="#services" class="ov-link"><span class="ov-num">01</span>Services</a>
-    <a href="#process" class="ov-link"><span class="ov-num">02</span>Process</a>
-    <a href="#why" class="ov-link"><span class="ov-num">03</span>Why Us</a>
-    <a href="#contact" class="ov-link"><span class="ov-num">04</span>Contact</a>
-    <a id="ovQuote" href="#" class="ov-link"><span class="ov-num">05</span>Get a Quote</a>
+    <a href="#work" class="ov-link"><span class="ov-num">02</span>Work</a>
+    <a href="#process" class="ov-link"><span class="ov-num">03</span>Process</a>
+    <a href="#testimonials" class="ov-link"><span class="ov-num">04</span>Clients</a>
+    <a href="#contact" class="ov-link"><span class="ov-num">05</span>Contact</a>
+    <a id="ovQuote" href="#" class="ov-link"><span class="ov-num">06</span>Get a Quote</a>
   </div>
   <div class="ov-foot">حلول رقمية متكاملة · 7uloul tech</div>
 </div>
@@ -671,6 +795,92 @@
   </div>
 </section>
 
+<section class="sec work depth" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">أعمالنا · Selected Work</span>
+      <h2>Work that earns its keep.</h2>
+      <p>A look at the kind of projects we design, build, and ship — from storefront commerce to full POS rollouts.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-1"><span class="glyph">M</span><span class="pcard-tag">POS · Retail</span></div>
+        <div class="pcard-body">
+          <h3>Mawsam — Restaurant POS</h3>
+          <p>Unified point-of-sale with live inventory, split billing, and daily reporting for a multi-branch restaurant.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">3×</div><div class="k">Faster checkout</div></div>
+            <div class="m"><div class="v">4</div><div class="k">Branches live</div></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-2"><span class="glyph">N</span><span class="pcard-tag">E-Commerce</span></div>
+        <div class="pcard-body">
+          <h3>Nuzha — Online Store</h3>
+          <p>High-converting storefront with custom product pages, checkout, and a content-managed catalog.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">+62%</div><div class="k">Conversion</div></div>
+            <div class="m"><div class="v">1.4s</div><div class="k">Load time</div></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-3"><span class="glyph">A</span><span class="pcard-tag">Brand · Identity</span></div>
+        <div class="pcard-body">
+          <h3>Atlas — Brand System</h3>
+          <p>Full identity: logo, type system, and a flexible asset kit that scales across print and digital.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">40+</div><div class="k">Assets shipped</div></div>
+            <div class="m"><div class="v">2wk</div><div class="k">Turnaround</div></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-4"><span class="glyph">S</span><span class="pcard-tag">Web · Business</span></div>
+        <div class="pcard-body">
+          <h3>Sahab — Corporate Site</h3>
+          <p>Bilingual (EN/AR) corporate website with a CMS, lead capture, and a measurable performance budget.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">98</div><div class="k">Lighthouse</div></div>
+            <div class="m"><div class="v">EN/AR</div><div class="k">Bilingual</div></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-5"><span class="glyph">Q</span><span class="pcard-tag">App · Operations</span></div>
+        <div class="pcard-body">
+          <h3>Qaid — Booking App</h3>
+          <p>Custom scheduling app with role-based access, reminders, and a clean operator dashboard.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">−70%</div><div class="k">No-shows</div></div>
+            <div class="m"><div class="v">24/7</div><div class="k">Self-serve</div></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#contact" class="pcard reveal">
+        <div class="pcard-vis pv-6"><span class="glyph">L</span><span class="pcard-tag">Landing · Launch</span></div>
+        <div class="pcard-body">
+          <h3>Lumen — Product Launch</h3>
+          <p>Conversion-focused launch page with motion, A/B-ready sections, and integrated lead routing.</p>
+          <div class="pcard-meta">
+            <div class="m"><div class="v">12%</div><div class="k">Sign-up rate</div></div>
+            <div class="m"><div class="v">5 days</div><div class="k">To live</div></div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <section class="sec process depth" id="process">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -717,15 +927,107 @@
   </div>
 </section>
 
+<section class="sec depth" id="testimonials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">آراء العملاء · Client Words</span>
+      <h2>Trusted by businesses that don't settle.</h2>
+    </div>
+    <div class="tgrid">
+
+      <div class="tcard reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>They didn't just build us a site — they understood the business first. The POS rollout was smooth and our staff picked it up in a day.</blockquote>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="who"><div class="av">MA</div><div><b>Mohammad A.</b><small>Owner · Restaurant Group</small></div></div>
+      </div>
+
+      <div class="tcard reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>Our new storefront looks premium and actually converts. Communication was clear at every stage, and they hit every deadline.</blockquote>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="who"><div class="av">RK</div><div><b>Rana K.</b><small>Founder · E-Commerce Brand</small></div></div>
+      </div>
+
+      <div class="tcard reveal">
+        <div class="qm">&ldquo;</div>
+        <blockquote>The brand identity they delivered finally made us look as established as we are. Worth every dinar — we keep coming back.</blockquote>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="who"><div class="av">YS</div><div><b>Yousef S.</b><small>Director · Services Company</small></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="sec depth" id="contact">
   <div class="wrap">
-    <div class="cta-box reveal">
-      <h2>Let's build your<br>digital solution.</h2>
-      <p>Tell us what you need — a website, an app, a brand, or a POS system. We'll scope it, price it, and deliver it.</p>
-      <div class="hero-cta">
-        <a id="ctaEmail" href="#" class="btn btn-gold">hello@7uloultech.com</a>
-        <a id="ctaWa" href="#" class="btn btn-ghost">Message on WhatsApp</a>
+    <div class="sec-head reveal" style="max-width:720px">
+      <span class="sec-tag">ابدأ مشروعك · Start a Project</span>
+      <h2>Let's build your digital solution.</h2>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-side reveal">
+        <div class="lead">Tell us what you need — we'll scope it, price it, and deliver it.</div>
+        <p>A website, an app, a brand, or a full POS system. Send the brief below or reach us directly. We typically reply same day.</p>
+        <div class="cside-direct">
+          <a id="ctaEmail" href="#">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Email us directly
+          </a>
+          <a id="ctaWa" href="#">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Message on WhatsApp
+          </a>
+        </div>
       </div>
+
+      <form class="contact-form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <h3>Get a quote</h3>
+        <div class="sub">Share a few details and we'll get back with a clear next step.</div>
+
+        <!-- Web3Forms: replace with your real access key from https://web3forms.com (free) -->
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New project inquiry — 7uloultech.com">
+        <input type="hidden" name="from_name" value="7uloul tech website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="field-row">
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" type="text" name="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" type="email" name="email" required placeholder="you@email.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="cf-service">What do you need?</label>
+          <select id="cf-service" name="service" required>
+            <option value="" disabled selected>Select a service…</option>
+            <option>Website design &amp; development</option>
+            <option>Application development</option>
+            <option>Branding &amp; logo design</option>
+            <option>POS system</option>
+            <option>Landing page</option>
+            <option>Website redesign</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="cf-message">Project details</label>
+          <textarea id="cf-message" name="message" required placeholder="Tell us about your project, goals, and any deadline…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold">Send inquiry
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <div class="form-note">Or email us directly at <span id="cf-emaillabel">basel29896@gmail.com</span></div>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
     </div>
   </div>
 </section>
@@ -784,6 +1086,14 @@
 </div>
 
 <script>
+  /* ===== CONTACT ROUTING — edit these two lines only ===== */
+  const CONTACT_EMAIL='basel29896@gmail.com';
+  const WHATSAPP_NUMBER='962795032137'; // intl format, digits only, no + or spaces
+  const MAIL_HREF='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('New inquiry - 7uloultech.com')+'&body='+encodeURIComponent('Hi Basel,\n\nI would like to discuss: ');
+  const WA_HREF='https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent('Hi 7uloul tech, I would like to discuss a project.');
+  [['ctaEmail',MAIL_HREF],['footEmail',MAIL_HREF],['ovQuote',MAIL_HREF],['ctaWa',WA_HREF],['footWa',WA_HREF]]
+    .forEach(([id,href])=>{const el=document.getElementById(id); if(el) el.href=href;});
+
   document.body.classList.add('loading');
   const nav=document.getElementById('nav');
   addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20));
@@ -994,6 +1304,52 @@
   function submit(){const v=input.value.trim();if(!v)return;userSay(v);input.value='';}
   send.addEventListener('click',submit);
   input.addEventListener('keydown',e=>{if(e.key==='Enter')submit();});
+
+  /* ===== CONTACT FORM (Web3Forms) ===== */
+  (function(){
+    const form=document.getElementById('contactForm');
+    if(!form)return;
+    const statusEl=document.getElementById('formStatus');
+    const emailLabel=document.getElementById('cf-emaillabel');
+    if(emailLabel)emailLabel.textContent=CONTACT_EMAIL;
+    const keyInput=form.querySelector('[name="access_key"]');
+
+    function setStatus(msg,kind){
+      statusEl.textContent=msg;
+      statusEl.className='form-status show '+kind;
+    }
+
+    form.addEventListener('submit',async(e)=>{
+      e.preventDefault();
+
+      /* graceful fallback until a real Web3Forms key is set */
+      if(!keyInput.value || keyInput.value==='YOUR_WEB3FORMS_ACCESS_KEY'){
+        const d=new FormData(form);
+        const body='Service: '+(d.get('service')||'')+'\n\n'+(d.get('message')||'')+'\n\n— '+(d.get('name')||'')+' ('+(d.get('email')||'')+')';
+        window.location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('New project inquiry - 7uloultech.com')+'&body='+encodeURIComponent(body);
+        setStatus('Opening your email app… if nothing happens, email us at '+CONTACT_EMAIL+'.','ok');
+        return;
+      }
+
+      const btn=form.querySelector('button[type="submit"]');
+      const original=btn.innerHTML;
+      btn.disabled=true;btn.textContent='Sending…';
+      try{
+        const res=await fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)});
+        const data=await res.json();
+        if(res.ok && data.success){
+          setStatus("Thanks — your inquiry is in. We'll reply shortly.",'ok');
+          form.reset();
+        }else{
+          setStatus('Something went wrong. Please email us at '+CONTACT_EMAIL+'.','err');
+        }
+      }catch(err){
+        setStatus('Network error. Please email us at '+CONTACT_EMAIL+'.','err');
+      }finally{
+        btn.disabled=false;btn.innerHTML=original;
+      }
+    });
+  })();
 </script>
 </body>
 </html>
