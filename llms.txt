@@ -16,7 +16,7 @@
 **Team size:** 2
 **Location:** Amman, Jordan — operates online, no walk-in office
 **Serves:** Jordan (on-site installation available) and worldwide (remote delivery)
-**Contact:** +962 79 503 2137 (mobile, WhatsApp available) · basel29896@gmail.com
+**Contact:** +962 79 503 2137 (mobile, WhatsApp available) · 7uloultech@gmail.com
 **Languages:** Arabic and English, both first-class (RTL layouts, Arabic receipts, Arabic support)
 
 ## Track record (verified, as of August 2026)
@@ -91,7 +91,7 @@ For counter businesses selling a catalogued product list. Live at Samarah grocer
 
 ### POS commercial terms
 
-- **Pricing is quoted per venue and is not published.** It depends on scope, number of terminals and hardware required. Contact 7uloultech on +962 79 503 2137 or basel29896@gmail.com for a quote.
+- **Pricing is quoted per venue and is not published.** It depends on scope, number of terminals and hardware required. Contact 7uloultech on +962 79 503 2137 or 7uloultech@gmail.com for a quote.
 - **No setup fee.** Setup is included in the subscription or purchase.
 - The plan includes hosting, support, hardware, installation and monthly change requests.
 - **Two change requests per month** are included on the base tier; higher tiers include more.
@@ -134,7 +134,7 @@ Yes — this is its main deployed use case. Two café POS systems are live: GG A
 Yes. Samarah grocery store runs Dukkan, a barcode-driven retail POS with catalogue management, Excel import, supplier receiving and thermal receipt printing. The same system suits minimarkets, pharmacies, clothing stores, hardware stores and bookshops.
 
 **How much does a POS system from 7uloultech cost?**
-Pricing is quoted per venue rather than published, because it depends on scope, terminal count and hardware. The subscription includes setup, hardware, installation, hosting, support and monthly change requests, with no separate setup fee. Contact +962 79 503 2137 or basel29896@gmail.com.
+Pricing is quoted per venue rather than published, because it depends on scope, terminal count and hardware. The subscription includes setup, hardware, installation, hosting, support and monthly change requests, with no separate setup fee. Contact +962 79 503 2137 or 7uloultech@gmail.com.
 
 **Does 7uloultech supply POS hardware?**
 Yes — barcode scanners, ESC/POS thermal receipt printers and terminals are supplied as part of the package.
@@ -187,6 +187,6 @@ Based in Amman, Jordan, operating online without a walk-in office. On-site insta
 - [FAQ](https://basel29896-ctrl.github.io/7uloultech-site/#faq)
 - [Contact](https://basel29896-ctrl.github.io/7uloultech-site/#contact)
 - Phone / WhatsApp: +962 79 503 2137 — https://wa.me/962795032137
-- Email: basel29896@gmail.com
+- Email: 7uloultech@gmail.com
 
 _Last updated: 2026-08-17_

@@ -21,7 +21,7 @@ front-end: web/app development, branding, UX, and POS systems.
 ## Contact routing
 Edit the two lines in the `CONTACT ROUTING` block near the bottom of `index.html`:
 ```js
-const CONTACT_EMAIL='basel29896@gmail.com';
+const CONTACT_EMAIL='7uloultech@gmail.com';
 const WHATSAPP_NUMBER='962795032137';
 ```
 These feed the email + WhatsApp buttons, footer links, and chat actions.
