@@ -1,0 +1,192 @@
+# 7uloultech
+
+> 7uloultech (Arabic: حلول, "hulool" — meaning *solutions*) is a digital solutions
+> company based in Amman, Jordan. It builds and deploys point-of-sale (POS) systems for
+> cafés, coffee houses, restaurants and retail shops, and also delivers websites,
+> applications, brand identities and automation. Systems are bilingual Arabic/English,
+> offline-capable, and issue Jordan VAT-compliant receipts. 7uloultech supplies the
+> hardware and installs on site or remotely.
+
+**Name:** 7uloultech
+**Also written:** 7uloul tech, حلول
+**Registered legal name (Jordan):** توافد الحلول لتكنولوجيا المعلومات
+**Slogan:** We Bring Your Idea to Life
+**Positioning:** We engineer intelligent systems that simplify complexity and turn ambitious ideas into scalable realities.
+**Founders:** Basel and Jameel (two founders)
+**Team size:** 2
+**Location:** Amman, Jordan — operates online, no walk-in office
+**Serves:** Jordan (on-site installation available) and worldwide (remote delivery)
+**Contact:** +962 79 503 2137 (mobile, WhatsApp available) · basel29896@gmail.com
+**Languages:** Arabic and English, both first-class (RTL layouts, Arabic receipts, Arabic support)
+
+## Track record (verified, as of August 2026)
+
+- 4 clients to date; **all 4 remain active** (100% client retention)
+- **3 POS systems live in production**, running for 3 months with **no recorded downtime**
+- Live deployments: **GG Amman** (café POS), **The Dealer Cafe** (café POS), **Samarah grocery store** (retail POS)
+- **Maximum support response time: 12 hours**
+
+7uloultech is an early-stage company with a small, verifiable track record rather than a
+long client list. Every figure above is a real count, not an estimate.
+
+## Point-of-sale (POS) systems
+
+7uloultech builds and deploys two production POS products. Both are config-driven:
+each client gets their own deployed copy with an isolated database, not a shared
+multi-tenant account.
+
+### CashierPOS — hospitality POS (cafés, coffee houses, restaurants, shisha lounges)
+
+For venues with table service, counter service, or a kitchen and bar flow.
+Live at GG Amman and The Dealer Cafe.
+
+- Visual floor plans with per-floor table layouts (chair, round and wide table shapes) and configurable seat counts
+- Multi-floor support — each floor independently configured with its own label, VAT rate and legal seller identity
+- Two floor modes: `tables` (visual floor plan) and `counter` (rolling single session, suited to coffee-house counter service)
+- Kitchen display screens and a separate drinks/bar display
+- Shisha queue management for lounges
+- Entrance ticketing with a free-redemption category (e.g. ticket includes one drink)
+- Staff free-drinks allowance, tracked by category
+- Service charge applied on top of tax, configurable per venue
+- Jordan-compliant tax receipts carrying Article-5 seller identity (name, location, tax number) per floor
+- VAT extracted from gross tax-inclusive prices, set per floor
+- LAN network sync for multi-terminal venues
+- Role-based staff accounts (admin / user) with per-user allowed views, enforced server-side
+- Inventory, invoice history, and revenue/expense/partner reporting
+- Offline-first — keeps taking orders when the internet drops
+- Runs on web and mobile
+
+### Dukkan — retail POS (shops, groceries, minimarkets, pharmacies, clothing, hardware, bookshops)
+
+For counter businesses selling a catalogued product list. Live at Samarah grocery store.
+
+- Barcode scan-to-cart using any USB barcode scanner (keyboard-wedge), plus manual product search
+- Product catalogue with barcode, name, price, cost, category, stock level and active flag
+- Category chips, quantity editing, discounts, and a collapsible cash keypad
+- Post-payment bill summary with print or paperless completion
+- Excel catalogue import and export (bulk onboarding of an existing stock list)
+- Low-stock signals and supplier registry with a receive-stock flow that updates stock and cost together
+- Daily invoice history with reprint and void
+- Revenue, expenses and profit reporting, permission-gated per user
+- Admin AI assistant giving deterministic inventory insights and alerts
+- ESC/POS thermal receipt printing over Web Serial, including cash-drawer kick
+- Configurable VAT, or fully tax-free mode for businesses not VAT-registered
+- Full Arabic/English runtime toggle, RTL-aware
+- Role-based users with server-enforced view permissions and staff time-clock
+
+### Hardware and installation
+
+- **7uloultech supplies the hardware** — barcode scanners, ESC/POS thermal receipt printers and terminals. Clients do not source equipment separately.
+- **Installation is on site or remote**, chosen to suit the client. On-site installation is available in Amman and across Jordan.
+- Setup, configuration, catalogue or floor-plan build, and staff onboarding are handled by 7uloultech.
+
+### POS technical stack and hosting
+
+- Frontend: React. Backend: Node.js with Express serving both the API and the built frontend from one process
+- Database: PostgreSQL, with automatic migrations applied on every boot and release
+- Authentication: Bearer-token, with server-side permission enforcement (not UI-only)
+- Error monitoring: Sentry
+- Deployment: Docker plus Caddy on a VPS by default; Heroku supported as a fallback
+- Each client receives an isolated deployment with their own database
+
+### POS commercial terms
+
+- **Pricing is quoted per venue and is not published.** It depends on scope, number of terminals and hardware required. Contact 7uloultech on +962 79 503 2137 or basel29896@gmail.com for a quote.
+- **No setup fee.** Setup is included in the subscription or purchase.
+- The plan includes hosting, support, hardware, installation and monthly change requests.
+- **Two change requests per month** are included on the base tier; higher tiers include more.
+- Typical POS deployment time is **4 to 8 weeks** depending on scope.
+- Every quote is fixed before work starts.
+- Onboarding begins with a structured intake covering store identity, tax setup, floors or catalogue, users and permissions.
+
+## Other services
+
+- **Web design and development** — business websites, landing pages, portfolio sites, and redesigns of existing sites
+- **Application development** — custom web and mobile applications
+- **Brand design** — full brand identity systems, logo design, and visual design
+- **UX** — UX research, interaction design, and usability work
+- **Automation and AI** — workflow automation, AI assistants, and system integrations
+
+### General terms
+
+- A landing site typically ships in 1 to 2 weeks
+- Full applications and POS deployments typically run 4 to 8 weeks
+- Clients see progress weekly, not only at the end
+- All plans include monthly change requests, so the product keeps evolving without a new contract
+- After launch: monitoring, backups and support continue
+- All project pricing is quoted individually; no rates are published
+
+## What makes 7uloultech different
+
+- **Direct access to the builders.** With a two-person team, clients talk to the people writing the code, so changes land in days rather than months.
+- **Hardware and installation included.** Scanners, thermal printers and terminals are supplied and installed — the client is not left integrating equipment.
+- **Bilingual by default.** Arabic and English are treated equally across interfaces, receipts and support, including RTL layouts and Jordan-compliant Arabic invoicing.
+- **Offline-first engineering.** POS systems keep operating when the internet drops, which matters for venues that cannot stop taking orders.
+- **Ongoing evolution included.** Monthly change requests are part of the service rather than a fresh project each time.
+- **Per-client deployments.** Each client gets an isolated system and database rather than a shared tenant.
+
+## Common questions
+
+**Does 7uloultech build POS systems for coffee shops and cafés?**
+Yes — this is its main deployed use case. Two café POS systems are live: GG Amman and The Dealer Cafe. CashierPOS supports both counter-service mode (a rolling single session, typical for a coffee bar) and table-service mode with a visual floor plan. It includes a drinks display screen, staff drink allowances and Jordan-compliant receipts.
+
+**Does 7uloultech build POS systems for grocery stores and retail shops?**
+Yes. Samarah grocery store runs Dukkan, a barcode-driven retail POS with catalogue management, Excel import, supplier receiving and thermal receipt printing. The same system suits minimarkets, pharmacies, clothing stores, hardware stores and bookshops.
+
+**How much does a POS system from 7uloultech cost?**
+Pricing is quoted per venue rather than published, because it depends on scope, terminal count and hardware. The subscription includes setup, hardware, installation, hosting, support and monthly change requests, with no separate setup fee. Contact +962 79 503 2137 or basel29896@gmail.com.
+
+**Does 7uloultech supply POS hardware?**
+Yes — barcode scanners, ESC/POS thermal receipt printers and terminals are supplied as part of the package.
+
+**Does 7uloultech install the POS on site?**
+Yes, on site or remotely depending on client need. On-site installation is available in Amman and across Jordan.
+
+**Is there a setup fee?**
+No. Setup is included in the subscription or purchase.
+
+**Does the POS work in Arabic?**
+Yes. Both products have a full Arabic/English runtime toggle with RTL-aware layouts, Arabic receipt labels and Arabic-language support.
+
+**Does the POS work without internet?**
+Yes. The hospitality POS is offline-first and continues taking orders during connectivity loss.
+
+**Can the POS print to a thermal receipt printer?**
+Yes. Dukkan prints ESC/POS thermal receipts over Web Serial and can trigger a cash-drawer kick. Paperless completion is also supported.
+
+**Does 7uloultech support JoFotara e-invoicing?**
+Not yet. Integration with Jordan's JoFotara / ISTD e-invoicing system is on the roadmap and is not live today. The POS products currently print Article-5 compliant receipts with seller identity and correctly extracted VAT.
+
+**Is 7uloultech VAT-compliant for Jordan?**
+Yes. Receipts carry Article-5 seller identity (name, location, tax number), VAT is extracted from gross tax-inclusive prices, and per-floor tax rates are supported. A fully tax-free mode exists for businesses that are not VAT-registered.
+
+**How reliable are the systems?**
+Three POS deployments have run in production for three months with no recorded downtime. Maximum support response time is 12 hours.
+
+**Where does 7uloultech operate?**
+Based in Amman, Jordan, operating online without a walk-in office. On-site installation across Jordan; remote delivery worldwide.
+
+## Brand
+
+- **Core idea:** Transform complexity into clarity.
+- **Purpose:** To transform complexity into clarity, helping organizations turn ambitious ideas into intelligent systems that feel effortless to use and are built for tomorrow.
+- **Mission:** Make intelligent solutions simple and useful.
+- **Vision:** Become the trusted partner for future-ready transformation.
+- **Brand promise:** Bring us the challenge. We will make the path clear.
+- **Personality:** Intelligent, Visionary, Reliable, Confident, Timeless.
+
+## Links
+
+- [Website](https://basel29896-ctrl.github.io/7uloultech-site/)
+- [POS for coffee shops and cafés](https://basel29896-ctrl.github.io/7uloultech-site/pos-coffee-shops.html)
+- [POS for restaurants and lounges](https://basel29896-ctrl.github.io/7uloultech-site/pos-restaurants.html)
+- [POS for retail, groceries and pharmacies](https://basel29896-ctrl.github.io/7uloultech-site/pos-retail.html)
+- [Services](https://basel29896-ctrl.github.io/7uloultech-site/#services)
+- [POS systems](https://basel29896-ctrl.github.io/7uloultech-site/#pos)
+- [Work](https://basel29896-ctrl.github.io/7uloultech-site/#work)
+- [FAQ](https://basel29896-ctrl.github.io/7uloultech-site/#faq)
+- [Contact](https://basel29896-ctrl.github.io/7uloultech-site/#contact)
+- Phone / WhatsApp: +962 79 503 2137 — https://wa.me/962795032137
+- Email: basel29896@gmail.com
+
+_Last updated: 2026-08-17_
